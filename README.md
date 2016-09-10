@@ -3,11 +3,11 @@ Here we can find all code of “Big data Internship Program”
 
 This course is part of “Big data Internship Program”  which is aligned to a typical Big data project life cycle stage.
 <br>
-Foundation<br>
-Ingestion<br>
-Storage<br>
-Processing<br>
-Visualization<br>
+<u> <li>Foundation<br></li>
+<li>Ingestion<br></li>
+<li>Storage<br></li>
+<li>Processing<br></li>
+<li>Visualization<br></li></u>
 This part 1 course is focused on the foundation of Big data . It cover technical and non-technical items like<br>
 Technical Foundation<br>
 
