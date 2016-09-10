@@ -8,22 +8,21 @@ Ingestion<br>
 Storage<br>
 Processing<br>
 Visualization<br>
-This part 1 course is focused on the foundation of Big data . It cover technical and non-technical items like
+This part 1 course is focused on the foundation of Big data . It cover technical and non-technical items like<br>
+Technical Foundation<br>
 
-Technical Foundation
+Refresh your knowledge on Unix<br>
+Java based on usage into Big Data .<br>
+Understand  git /github which is used by most of the companies for source control<br>
+Hadoop Installation<br>
+Non-technical Foundation<br>
 
-Refresh your knowledge on Unix
-Java based on usage into Big Data .
-Understand  git /github which is used by most of the companies for source control
-Hadoop Installation
-Non-technical Foundation
+Understand Big data project life cycle<br>
+Understand Roles in Big data Implementation<br>
+Understand the Real life Project<br>
+Big data Topics<br>
 
-Understand Big data project life cycle
-Understand Roles in Big data Implementation
-Understand the Real life Project
-Big data Topics
-
-Learn about the hadoop ecosystem
-HDFS
-MapReduce
-Why Spark?
+Learn about the hadoop ecosystem<br>
+HDFS<br>
+MapReduce<br>
+Why Spark?<br>
