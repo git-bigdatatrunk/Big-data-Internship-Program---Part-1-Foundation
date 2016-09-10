@@ -26,3 +26,11 @@ Big data Topics<br>
 <li>HDFS<br></li>
 <li>MapReduce<br></li>
 <li>Why Spark?<br></li></u>
+
+Feel free to contact us at info@bigdatatrunk.com and visit our website www.bigdatatrunk.com for any classroom training,job placement, project consulting service<br>
+
+A warm welcome from our entire - Big data Trunk Team !!!<br>
+
+info@bigdatatrunk.com<br>
+
+www.bigdatatrunk.com<br>
