@@ -1,0 +1,123 @@
+Module 3 -  MODULE-03 HDFS Commands 
+===================================================================================================================================================
+CopyRight - Big Data Trunk LLC
+www.BigDataTrunk.com
+Twitter - @BigDataTrunk
+
+===================================================================================================================================================
+Aim:The main aim of this lab is to understand the basic Hadoop commands, using which you can perform various operations on HDFS
+
+===================================================================================================================================================
+
+#Commands and there usage.
+
+#Command: hadoop version
+hadoop version
+#How to use: hadoop version
+#Explanation: Use to to find the Version of Hadoop.
+
+
+#Command: ls
+hadoop fs -ls /
+#How to use: hadoop fs -ls /
+#Explanation: Displays List of Files and Directories in HDFS file Path
+
+
+#Command: mkdir
+#syntax:hadoop fs -mkdir /directory_name
+hadoop fs -mkdir /bigdata
+#Explanation: It creates the directory in HDFS
+
+
+#Command: du
+#Syntax: hadoop fs -du -s /path/to/file_in_hdfs
+hadoop fs -du -s /user/cloudera/HdfsHello
+#Explanation: Displays the summary of file lengths.
+
+
+Command: touchz
+#Syntax: hadoop fs -touchz /directory/filename 
+hadoop fs -touchz /user/cloudera/sampledata
+#Explanation:  Create a file in HDFS with file size 0 bytes
+
+
+#Note: Here we are trying to create a file named sampledata in the directory cloudera of hdfs with file size 0 bytes.
+#Use the du command to check the file size
+hadoop fs -du -s /user/cloudera/sampledata
+
+
+#Command: cat
+#Syntax: hadoop fs -cat /path/to/file_in_hdfs
+hadoop fs -cat /user/cloudera/HdfsHello
+#Explanation: Copies source paths to stdout.
+#Note: Here HdfsHello is a file that exists in HDFS in the directory /user/cloudera
+
+
+#cat>Command
+#Syntax: cat >  <filename>  (or)  cat > <filepath with new filename>
+cat > hadooptraining
+#Explanation: This command is used to create file in specified directory or in default home directory. 
+#Note: After typing text in file press  ctrl + d for saving and exiting from file.
+
+
+#Cat >> Command:
+#Syntax: cat >> <filename>
+cat >> hadooptrianing
+#Explanation: This command is used to append the text from existing file text.
+#Note: After typing text in file press “ ctrl + d” for saving and exiting from file.  
+
+
+#Command: text
+#Syntax: hadoop fs -text /path/to/file_in_hdfs
+hadoop fs -text /user/cloudera/HdfsHello
+#Explanation: Takes a source file and outputs the file in text format.(Same as Cat command)  
+#Note: Here HdfsHello is a file that exists in HDFS in the directory /user/cloudera
+
+
+#Command: copyFromLocal
+#Syntax: hadoop fs -copyFromLocal <localsrc> URI 
+hadoop fs -copyFromLocal /home/cloudera/hadooptraining /user/cloudera
+#Explanation:Copy the file from Local file system to HDFS.Note: Here hadooptraining is the file present in the local directory - /home/cloudera
+
+
+
+#Command: copyToLocal
+#Syntax: hadoop fs -copyToLocal URI <localdst>
+hadoop fs -copyToLocal HdfsHello /home/cloudera
+#Explanation: Copy the file from HDFS to Local File System. 
+#Note: Here HdfsHello is a file present in default hdfs directory ie /user/cloudera of HDFS 
+
+
+#Command: put
+#Syntax: hadoop fs -put <localsrc> ... <dst> 
+hadoop fs -put hadoop /user/cloudera
+#Explanation:  Copy single source, or multiple srcs from local file system to the destination file system.
+#Note: copyFromLocal is similar to put command, except that the source is restricted to a local file reference
+
+
+#Command: get
+#hadoop fs -get [-ignorecrc] [-crc] <src> <localdst>
+hadoop fs -get bigdata /home/cloudera 
+#Explanation: Copy files from hdfs to the local file system.  
+#Note: copyToLocal is similar to get command, except that the destination is restricted to a local file reference.
+
+
+#Command: count
+#Syntax:  hadoop fs -count
+hadoop fs -count /user/cloudera
+#Explanation:  Count the number of directories, files and bytes under the paths that match the specified file pattern.
+
+
+#Command: rm
+Syntax: hadoop fs -rm /path/to/file_in_hdfs
+hadoop fs -rm sampledata
+#Explanation: Remove the file from HDFS.
+
+
+#Command: rmr	
+#Syntax: hadoop fs -rmr /path/to/directory_in_hdfs
+hadoop fs -rmr bigdata
+#Explanation: Remove the directory to HDFS
+
+
+
