@@ -1,0 +1,319 @@
+Lab 2a -  MODULE-2 Basic of unix and linux Commands 
+===================================================================================================================================================
+CopyRight - Big Data Trunk LLC
+www.BigDataTrunk.com
+Twitter - @BigDataTrunk
+
+===================================================================================================================================================
+Aim:The aim of this document is to describe various Linux commands
+
+===================================================================================================================================================
+
+
+#This section gives the following table which has list of Linux/unix commands.
+
+#Command: pwd
+pwd
+#Explanation: Present Working Directory
+
+
+#Command: ls
+#How to use: ls /directory path
+ls /home/cloudera
+#Explanation: List file
+
+
+#Command: ls -ll
+#How to use: ls –ll
+ls -ll
+#Explanation: Long list of files and directory ‘d’ Indicates Directory, ‘-‘ Indicates File
+
+
+#Command: ls -al
+#How to use:ls –al
+ls –al
+#Explanation: Listing all hidden filesOr Directory
+
+
+#Command: mkdir
+#How to use: mkdir
+mkdir Work
+#eg: 1)mkdir dir1
+#mkdir dir1 dir2 dir3
+#Explanation: Create directory For Creating Multiple Directories
+
+
+#Command: rm -r
+#How to use: rm –r /directory_path
+rm -r /home/cloudera/directory
+#Explanation: Remove directory or file
+
+
+#Command: cd
+#How to use: cd directoryname
+cd BigData
+#Explanation: To change the directory
+
+
+#Command: cd ..
+#How to use: cd ..
+cd ..
+#Explanation: To change the directory
+
+
+#Command: cd ~
+#How to use: cd ~
+cd ~
+#Explained:go home directory
+
+
+#Command: cp
+#How to use:cp src_file_path /destination_directory_path
+#ex: cp file1 dir1
+#cp dir1/* dir2
+cp text /home/cloudera/Work
+#Explanation:Copy filesAll the files in dir1 are copied into dir2. dir2 must already
+
+
+#Command: mv
+#How to use:mv src _file_path/destination_dir._path
+#ex: mv myfile.txt /newdirectorymv current_filename new_filename
+mv text /home/cloudera/BigData/text.text
+#Explanation:Renames a file or moves it from one directory to another directory
+
+
+#Command: rm
+#How to use:rm file_path
+sudo rm text.txt
+#Explanation:Delete file1 silently Delete dir1 and its contents
+
+
+#command:cat
+#How to use:cat /file_path
+cat /home/cloudera/file_name
+#Explanation:View files
+
+
+#Command:gedit
+#How to use:gedit /file_path
+gedit work.txt
+#Explanation:Text editor
+
+
+#Command:stat
+#How to use:stat /file_path
+stat /home/cloudera/Work/student
+#Explanation:Display file attributes(properties)
+
+
+#Command:wc
+#Ho to use:wc /file_path
+wc /home/cloudera/Work/student
+#Explanation:Count lines/words/bytes
+
+
+#Command:chown
+#How to use:chown user_name file_path
+chown cloudera /home/cloudera/Work/student.txt
+#Explanation:Change file owner Change the owner and group owner of a file or directory
+
+
+#Command:chgrp
+#How to use:chgrp group_name /file_path
+chgrp admin /home/cloudera/Work/student.txt
+#Explanation:Change file group
+
+
+#Command:chmod
+#How to use:chmod permission /file_path file_name
+sudo chmod 775 /home/cloudera/Work/student
+#Explanation:To change permission of a file Use option -R to change the permission recursively
+
+
+#Command:ifconfig
+#How to use:ifconfig
+ifconfig
+#Explanation:Set/display networkinformation/ Ip address
+
+
+#Command:ps
+#How to use:ps
+ps
+#Explanation:To view processes
+
+
+#Command:kill
+#How to use:kill -9 Pid(process identification number)
+sudo kill -9  
+#Explanation:The kill command is used to send signals to programs
+
+
+#Command:passwd
+#How to use:Passwd
+Passwd
+#(current) UNIX password:
+#Explanation: Change the password
+
+
+#Command:chattr
+#How to use:sudo chattr +i/-i /file_path
+sudo chattr +I /home/cloudera/Work/studen
+#Explanation:Change advanced file attributes
+
+
+#Command:tail
+#How to use:tail filename
+tail /home/user/cloudera/Work/student
+#Explanation:Prints last few lines in a file
+
+
+#Command:grep
+#How to use:grep ‘word’ filename
+grep student
+#Explanation:Search files for regular expression
+
+
+#Command:sed
+#How to use:Sed 's/unix/linux/' filename
+sed 's/unix/linux/' /home/cloudera/Work/student
+sed 's/unix/linux/g' /home/cloudera/Work/student
+#Explanation:Replacing or substituting string(the "s" specifies the substitution operation) By default, the sed command replaces the first occurrence #of the pattern in each line
+
+
+#Command:head
+#How to use:head filename
+head /home/cloudera/Work/student
+#Explanation:Display first few lines of a file
+
+
+#Command:file
+#How to use:file filename
+file /home/cloudera/student.txt
+#Explanation:Determine file type
+
+
+#Command:man
+#How to use:man filename
+man /home/cloudera/student.txt
+#Explanation:Displays manual pages online
+
+
+#Command:sort
+#How to use:Sort filename
+sort /home/cloudera/student.txt
+#Explanation:Sort file data
+
+
+                                 #Advance linux command
+
+
+#Command: dig
+#How to use:dig bigdatatrunk.com
+dig bigdatatrunk.com
+#Explanation: dig (domain information groper) is a network administration command-line tool for querying Domain Name System (DNS) name servers. dig #is useful for network troubleshooting and for educational purposes.
+
+
+
+#Command: history
+#How to use: history
+history
+#Explanation: check history of command or to get info about command executed by user.
+
+
+#Command: whatis
+#How to use:whatis ls
+whatis ls
+#Explanation:Whatis command is helpful to get brief information about Linux commands or functions. Whatis command displays man page single line description for command that matches string passed as a command line argument to whatis command.
+
+
+#Command: wget
+#How to use:wget http://javadl.oracle.com/webapps/download/AutoDL?bundledID=116037
+wget http://javadl.oracle.com/webapps/download/AutoDL?bundledID=116037
+#Explanation:wget is a Linux/UNIX command line file downloader.Wget is a free utility for non-interactive download of files from the Web.
+
+
+#Command: ifconfig
+#How to use:ifconfig
+ifconfig
+#Explanation:The “ifconfig” command is used for displaying current network configuration information, setting up an ip address, netmask or broadcast #address to an network interface, creating an alias for network interface, setting up hardware address and enable or disable network interfaces.
+
+
+#Command: netstat
+#How to use:netstat -i
+netstat -i
+#Explanation:Netstat is a command line utility that can be used to list out all the network (socket) connections on a system. It lists out all the #tcp, udp socket connections and the unix socket connections.
+
+
+#Command: nslookup
+#How to use:nslookup
+nslookup
+#Explanation:nslookup is a network administration tool for querying the Domain Name System (DNS) to obtain domain name or IP address mapping or any #other specific DNS record.
+
+
+#Command: lsof
+#How to use:lsof +d /var/log
+lsof +d /var/log
+#Explanation:It is easy to remember lsof command if you think of it as “ls + of”, where ls stands for list, and of stands for open files.
+
+
+#Command: free
+#How to use:free
+free
+#Explanation:free is a command which can give us valuable information on available RAM in Linux machine. But many new Linux users and admins #misinterpret its output. In this post we will walk through its output format and show you actual free RAM.
+
+
+#Command: vi/nano
+#How to use:vi BigData
+vi BigData
+#Explanation:one of the best ways is using screen-oriented text editor vi. This editor enable you to edit lines in context with other lines in the #file.
+
+
+#Command: who
+#How to use:who am i
+who -ah
+#Explanation:The who command prints information about all users who are currently logged in.
+
+
+#Command: uptime
+#How to use:uptime
+uptime
+#Explanation:uptime gives a one-line display of the following information:
+#The current time
+#how long the system has been running
+#how many users are currently logged on
+#the system load averages for the past 1, 5, and 15 minutes.
+
+
+#Command: bc
+#How to use:bc
+bc
+#Explanation:Unix or linux operating system provides the bc command andexpr command for doing arithmetic calculations. You can use these commands in #bash or shell script also for evaluating arithmetic expressions.
+
+
+#Command: top
+#How to use:top
+top
+#Explanation:The top command provides a dynamic real-time view of a running system. It can display system summary information, as well as a list #ofprocesses or threads currently being managed by the kernel.
+
+
+#Command: join
+#How to use:join
+join
+#Explanation:Join command is one of the text processing utility in Unix/Linux. Join command is used to combine two files based on a matching fields #in the files.
+
+
+#Command:cal
+#How to use:cal
+cal
+#Explanation:A. date displays the Linux or UNIX system current date and time. The cal command displays a simple calendar
+
+
+#Command:du
+#How to use:du
+du
+#Explanation:The Linux “du” (Disk Usage) is a standard Unix/Linux command, used to check the information of disk usage of files and directories on a #machine.
+
+
+
+
+
