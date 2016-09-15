@@ -1,0 +1,98 @@
+Collections-ListImplementation
+package practice;
+
+import java.util.ArrayList;
+import java.util.Iterator;
+import java.util.List;
+
+public class ListImplementation {
+	
+	public static void main(String args[])
+	{
+	 List al=new ArrayList();	
+	 al.add(1);
+	 al.add(2);
+	 al.add("2");
+	 Iterator it=al.iterator();
+	 while(it.hasNext())
+	        {
+		 System.out.println(it.next());
+	        }
+	}
+
+}
+
+-------------------------------------------------------------------
+#Stack-generics1
+
+package practice;
+
+import java.util.ArrayList;
+
+public class Stack <T>{
+	
+		  private ArrayList<T> stack = new ArrayList<T> ();
+		  private int top = 0;
+		  
+		     public int size () 
+			{
+			     return top; 
+                                                     }
+		   
+		      public void push (T item) 
+		      {
+		        stack.add (top++, item);
+		      }
+		  
+		     public T pop () {
+		        return stack.remove (--top);
+		     }
+		  
+		public static void main (String[] args) {
+		   Stack<String> s = new Stack<String> ();
+		   s.push ("17");
+		   Stack<Integer> s1=new Stack<Integer>();
+		        	     }
+		  
+		  
+}
+-----------------------------------------------
+#Generics2-
+package practice;
+
+public class GnericsExample {
+	
+	public static <T> int countOccurrences(T[] list, T itemToCount) {
+		   int count = 0;
+		   if (itemToCount == null) {
+		      for ( T listItem : list )
+		         if (listItem == null)
+		            count++;
+		   }
+		   else {
+		      for ( T listItem : list )
+		         if (itemToCount.equals(listItem))
+		            count++;
+		   }
+		   return count;
+		}
+	public static void main(String args[])
+	{
+		//If wordList is a variable of type String[] and word is a variable of type String, then
+
+		String []wordList={"In the course","The big data course"};
+		String word="the";
+		int ct = countOccurrences( wordList, word );
+
+		//will count the number of times that word occurs in wordList. 
+		//If palette is a variable of type Color[] and color is a variable of type Color, then
+
+		//int ct = countOccurrences( palette, color );
+
+		//will count the number of times that color occurs in palette.
+		//If numbers is a variable of type Integer[], then
+       Integer[] numbers={12,13,14};
+	   int ct2 = countOccurrences( numbers, 17 );
+	}
+
+}
