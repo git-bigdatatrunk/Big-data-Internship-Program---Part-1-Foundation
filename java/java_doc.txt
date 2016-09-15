@@ -1,4 +1,5 @@
-Collections-ListImplementation
+//Collections-ListImplementation
+
 package practice;
 
 import java.util.ArrayList;
@@ -23,7 +24,7 @@ public class ListImplementation {
 }
 
 -------------------------------------------------------------------
-#Stack-generics1
+//Stack-generics1
 
 package practice;
 
@@ -57,7 +58,7 @@ public class Stack <T>{
 		  
 }
 -----------------------------------------------
-#Generics2-
+//Generics2-
 package practice;
 
 public class GnericsExample {
