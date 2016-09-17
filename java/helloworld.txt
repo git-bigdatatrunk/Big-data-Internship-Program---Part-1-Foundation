@@ -1,0 +1,57 @@
+1. Double click on Eclipse.exe to start Eclipse:
+
+2. Browse and Select the location for Workspace and click OK:
+
+3. Create java Project: Click on File -> New-> Java Project.
+    Enter Project Name and click on Finish.
+
+4. Create Java class: Expand the Java project and right Click on src -> New -> Class.
+
+    Enter the Package Name (Optional). Enter the class Name.
+
+    Select Public radio button and check the Public static void main(String[]args) check box.
+
+    Click Finish.
+
+5. Write a code to Print "Hello World" inside Main method.
+
+   System.out.println("Hello World");
+
+   Save and Click on run button to execute the Program.
+
+   You can see the output on console below.
+
+6. 2nd Method:
+
+  Declare an instance variable 's',  with Data type String.
+
+  Create a method with String as a return type and return the variable ‘s’ created
+
+  Create an object of helloworld class.
+
+  Call the method using the object.
+
+  Check the output in console.
+
+  Note: Please Find below the whole code.
+
+  HelloWorld code available here:
+
+
+package Package1;
+
+public class helloWorld {
+
+    String s = "Hello World 2";
+    public String Program(){
+   	 System.out.println("Hello World 1");
+   	 return s;
+    }
+    public static void main(String[] args) {
+   	 // TODO Auto-generated method stub
+System.out.println("Hello World");
+helloWorld helloWorld = new helloWorld();
+System.out.println(helloWorld.Program());
+    }
+
+}
